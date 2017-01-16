@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import assessment.android.istar.com.mycart.MainActivity;
 import assessment.android.istar.com.mycart.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -111,7 +112,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        finish();
+        Toast.makeText(getBaseContext(), "Login Succccccesssssss", Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+
     }
 
     public void onLoginFailed() {
