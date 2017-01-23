@@ -1,8 +1,3 @@
-/*
- * This is the source code of DMPLayer for Android v. 1.0.0.
- * You should have received a copy of the license in this archive (see LICENSE).
- * Copyright @Dibakar_Mistry, 2015.
- */
 package com.amarplayer.utility;
 
 import android.annotation.SuppressLint;
@@ -31,6 +26,7 @@ import java.lang.reflect.Method;
  * translucent system UI modes.
  *
  */
+@SuppressWarnings("ResourceType")
 public class SystemBarTintManager {
 
     static {
