@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.dmplayer"
+        applicationId "com.amarplayer"
         minSdkVersion 11
         targetSdkVersion 21
         versionCode 1

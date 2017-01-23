@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dmplayer">
+    package="com.amarplayer">
 
 
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -13,13 +13,13 @@
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
     <application
-        android:name=".ApplicationDMPlayer"
+        android:name="com.amarplayer.ApplicationDMPlayer"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.DMPlayerBaseActivity"
+            android:name="com.amarplayer.activities.DMPlayerBaseActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -75,12 +75,12 @@
 
 
         <activity
-            android:name=".activities.AlbumAndArtisDetailsActivity"
+            android:name="com.amarplayer.activities.AlbumAndArtisDetailsActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".activities.MusicChooserActivity"
+            android:name="com.amarplayer.activities.MusicChooserActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT" />
@@ -98,11 +98,11 @@
 
 
         <service
-            android:name=".manager.MusicPlayerService"
+            android:name="com.amarplayer.manager.MusicPlayerService"
             android:enabled="true"
             android:exported="true" />
 
-        <receiver android:name=".manager.MusicPlayerReceiver">
+        <receiver android:name="com.amarplayer.manager.MusicPlayerReceiver">
             <intent-filter>
                 <action android:name="musicplayer.close" />
                 <action android:name="musicplayer.pause" />
